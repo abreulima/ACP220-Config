@@ -11,7 +11,7 @@ SoftwareSerial APC220(APC_RX,APC_TX);
 void setup_APC()
 {
     char cmd[20];
-    sprintf(cmd, WR_%s_3_9_0_0, FREQ);
+    sprintf(cmd,"WR %s 3 9 0 0", FREQ);
     Serial.println(cmd);
 
     digitalWrite(APC_SET, LOW);
